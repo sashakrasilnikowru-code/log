@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Liquid Glass & Acrylic Lighting */
+.glass-window-light {
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 35px 80px -15px rgba(80, 60, 45, 0.22),
+    0 15px 30px -5px rgba(80, 60, 45, 0.12),
+    inset 0 2px 2px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.04);
+}
+
+.glass-window-dark {
+  background: rgba(18, 22, 32, 0.72);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 
+    0 40px 90px -15px rgba(0, 0, 0, 0.85),
+    0 15px 35px -5px rgba(0, 0, 0, 0.6),
+    inset 0 2px 2px rgba(255, 255, 255, 0.22),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.45);
+}
+
+/* Purple Jelly Pill (matching reference "secondary") */
+.pill-purple {
+  background: linear-gradient(135deg, rgba(147, 70, 245, 0.9) 0%, rgba(124, 58, 237, 0.95) 100%);
+  box-shadow: 
+    inset 0 2px 3px rgba(255, 255, 255, 0.85),
+    inset 0 -2px 4px rgba(59, 7, 100, 0.35),
+    0 10px 22px -3px rgba(124, 58, 237, 0.45),
+    0 3px 8px -2px rgba(124, 58, 237, 0.3);
+}
+
+.pill-purple:hover {
+  background: linear-gradient(135deg, rgba(157, 85, 255, 0.95) 0%, rgba(134, 68, 247, 0.98) 100%);
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 4px rgba(59, 7, 100, 0.4),
+    0 14px 28px -2px rgba(124, 58, 237, 0.55);
+}
+
+/* Teal Jelly Pill (matching reference "Secondary") */
+.pill-teal {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.9) 0%, rgba(13, 148, 136, 0.95) 100%);
+  box-shadow: 
+    inset 0 2px 3px rgba(255, 255, 255, 0.85),
+    inset 0 -2px 4px rgba(13, 90, 85, 0.35),
+    0 10px 22px -3px rgba(20, 184, 166, 0.45),
+    0 3px 8px -2px rgba(20, 184, 166, 0.3);
+}
+
+.pill-teal:hover {
+  background: linear-gradient(135deg, rgba(60, 225, 205, 0.95) 0%, rgba(18, 165, 150, 0.98) 100%);
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 4px rgba(13, 90, 85, 0.4),
+    0 14px 28px -2px rgba(20, 184, 166, 0.55);
+}
+
+/* Translucent Frosted Glass Card */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 
+    0 12px 32px -8px rgba(90, 70, 50, 0.12),
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.85),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.glass-panel-dark {
+  background: rgba(26, 33, 48, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 14px 35px -8px rgba(0, 0, 0, 0.6),
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.16),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Iridescent Holographic Card (matching reference bottom-right card) */
+.glass-holo-light {
+  background: linear-gradient(135deg, rgba(255, 219, 195, 0.7) 0%, rgba(253, 207, 236, 0.65) 45%, rgba(199, 210, 254, 0.7) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 18px 40px -10px rgba(180, 100, 140, 0.2),
+    inset 0 2px 2px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.glass-holo-dark {
+  background: linear-gradient(135deg, rgba(76, 29, 149, 0.5) 0%, rgba(131, 24, 67, 0.45) 45%, rgba(17, 94, 89, 0.5) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 20px 45px -10px rgba(0, 0, 0, 0.7),
+    inset 0 2px 2px rgba(255, 255, 255, 0.25),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Elevated Tactile White Pill (matching reference "Create workspace") */
+.pill-white-elevated {
+  background: #ffffff;
+  box-shadow: 
+    0 8px 24px -3px rgba(60, 45, 35, 0.12),
+    0 2px 6px rgba(60, 45, 35, 0.05),
+    inset 0 1.5px 1px rgba(255, 255, 255, 1);
+}
+
+.dark .pill-white-elevated {
+  background: #1e2536;
+  box-shadow: 
+    0 8px 24px -3px rgba(0, 0, 0, 0.5),
+    0 2px 6px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+/* Glass Bubble Sphere */
+.glass-sphere {
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.35) 45%, rgba(200, 220, 255, 0.15) 75%, rgba(180, 200, 240, 0.4) 100%);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 12px 20px -4px rgba(60, 45, 35, 0.22),
+    inset 0 2px 4px rgba(255, 255, 255, 0.9),
+    inset 0 -3px 5px rgba(100, 120, 180, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 140, 160, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 140, 160, 0.45);
+}

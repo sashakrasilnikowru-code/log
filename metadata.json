@@ -1,0 +1,6 @@
+{
+  "name": "График Смен — Liquid Glass ShiftFlow",
+  "description": "Настольное приложение для составления и управления графиком смен сотрудников с дизайном Liquid Glass и поддержкой светлой и тёмной темы.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
